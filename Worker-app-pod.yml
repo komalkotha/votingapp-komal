@@ -1,0 +1,11 @@
+appVersion: v1
+kind: pod
+metadata:
+  name: worker-app
+  labels:
+    name: worker-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: worker-app
+      image: dockersamples/examplevotingapp_worker

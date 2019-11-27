@@ -1,0 +1,13 @@
+appVersion: v1
+kind: pod
+metadata:
+  name: reddis-app
+  labels:
+    name: reddis-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: reddis
+      image: reddis
+      ports:
+        - containerPort: 6379
